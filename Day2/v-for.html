@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <h3>{{user.name}}:{{user.age}}:{{user.pwd}}</h3>
+    <span v-for="(key,value,index) in user">
+        {{key}}:{{value}}:{{index}}
+    </span>
+
+    <ul v-for="(city,index) in arr">
+        <li>{{index+1}}:{{city}}</li>
+    </ul>
+    <hr>
+    <ul v-for="(key,index) in users">
+        <li>{{key}}:{{index}}</li>
+        <li>{{key.name}}</li>
+        <li>{{key.age}}</li>
+        <li>{{key.pwd}}</li>
+        <li>{{key.vfd}}</li>
+    </ul>
+</div>
+
+<script>
+    new Vue({
+            el: "#app",
+            data: {
+                user:{name:"小白",age:20,pwd:"123456"},
+                arr:["四川","成都","天安门"],
+                users:[{name:"小黑",age:13,pwd:"123456",vfd:'vdfvdv'},
+                    {name:"小张",age:23,pwd:"123456",vfd:'vdfvdv'},
+                    {name:"小白",age:26,pwd:"123456",vfd:'vdfvdv'}
+                ]
+            }
+        }
+    )
+</script>
+</body>
+</html>

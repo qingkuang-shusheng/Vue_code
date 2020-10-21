@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <h3 @click="low_num">这是vue的number: {{number}}</h3>
+    <com></com>
+</div>
+
+<script>
+
+    let com = {
+        template: `
+          <div>这是我的组件
+          <button @click="change">点击我</button>
+          <div>我是嵌套的div, {{ number }}</div>
+          </div>
+        `,
+        methods: {
+            change() {
+                this.number--;
+            },
+        },
+        data: function () {
+            return {
+                number: 40,
+            }
+        }
+    }
+
+    Vue.component("com",com)
+
+    new Vue({
+            el: "#app",
+            data: {
+                number: 50,
+            },
+            methods: {
+                    low_num() {
+                        this.number++;
+                    }
+            }
+        }
+    )
+</script>
+</body>
+</html>

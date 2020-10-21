@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="vue.min.js"></script>
+
+<!-- development version, includes helpful console warnings -->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+
+<!-- production version, optimized for size and speed -->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue"></script>-->
+<div id="app">
+    <h3>{{ msg }}</h3>
+    <h2 v-text="msg"></h2>
+    <h3>{{ number }}</h3>
+    <h3>{{ arr }}</h3>
+    <h3>{{ user[1].name }}</h3>
+    <h3>{{ user[1].password }}</h3>
+    <h3>{{ user[0].name}}</h3>
+    <h3>{{ user[0].password }}</h3>
+</div>
+
+<script>
+    new Vue({
+        el:"#app",
+        data: {
+            msg:"欢迎",
+            number:20,
+            arr: ["太原","运城","河南"],
+            user:[{'name':"yyy",password:'123456'},{'name':"dddd",password: '1234'}]
+        }
+    })
+</script>
+
+<div id="app-2">
+  <span v-bind:title="message">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
+</div>
+
+<script>
+    let app2 = new Vue({
+        el: '#app-2',
+        data: {
+            message: 'You loaded this page on ' + new Date().toLocaleString()
+        }
+    })
+</script>
+
+<div id="app-3">
+    <span v-if="seen">Now you see me</span>
+</div>
+<script>
+    let app3 = new Vue({
+        el: '#app-3',
+        data: {
+            seen: true
+        }
+    })
+</script>
+
+<div id="app-4">
+    <ol>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ol>
+</div>
+<script>
+    let app4 = new Vue({
+        el: '#app-4',
+        data: {
+            todos: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue' },
+                { text: 'Build something awesome' }
+            ]
+        }
+    })
+</script>
+
+<div id="app-5">
+    <span>年龄:{{ age }}</span>
+    <hr>
+    <input type="button" v-on:click="ff" value="点我+">
+<!--    事件简化写法-->
+    <input type="button" @click="aa" value="点我-">
+</div>
+<script>
+    let app5 = new Vue({
+        el: '#app-5',
+        data: { age : 18 },
+        methods:{
+            ff:function(){
+            this.age ++;
+            },
+            // 事件函数简化写法
+            aa(){
+              this.age --;
+            }
+        },
+    })
+</script>
+
+
+
+<!--v-model双向绑定-->
+<div id="app-6">
+    <p>{{ message }}</p>
+    <input v-model="message">
+</div>
+<script>
+    let app6 = new Vue({
+        el: '#app-6',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })
+</script>
+
+</body>
+</html>

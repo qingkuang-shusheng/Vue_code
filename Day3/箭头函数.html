@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    function add(a,b){
+        console.log(a + b);
+    }//正常函数
+    add(1,5)
+    //匿名函数
+    let app = function (a,b,c){
+        console.log(a*b+c)
+    }
+    app(3,5,6)
+    let app2 = (a,b,c) => console.log(a+b+c)
+    app2(1,5,8)
+
+    let app3 = (a,b) =>{
+        console.log(a+b);
+        console.log(a*b);
+    }
+    app3(8,9)
+    let app4 = x => console.log(x)
+    app4(45)
+    let app5 = x => x+6
+    console.log(app5(47));
+    let app7 = () => console.log("hello vue")
+    app7()
+</script>
+</body>
+</html>

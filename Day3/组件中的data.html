@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <first></first>
+</div>
+
+<script>
+
+    let first = {
+        template: `
+        <div>这又是一个组件<br>
+        <span @click="change">这是组件的span, {{username}}</span></div>
+
+        `,
+        data: function (){
+            return {
+                username: "小白",
+            }
+        },
+        methods:{
+            change(){
+                alert();
+            }
+        }
+    }
+
+    Vue.component("first", first)
+
+    new Vue({
+            el: "#app",
+            data: {},
+
+        }
+    )
+</script>
+</body>
+</html>

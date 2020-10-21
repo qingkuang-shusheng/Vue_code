@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    {{ msg }}
+    <hr>
+    <span v-html="msg"></span>
+</div>
+
+<script>
+    new Vue({
+            el: "#app",
+            data: {
+                msg: "<a href=\"\">百知教育</a>",
+            }
+        }
+    )
+
+</script>
+
+</body>
+</html>

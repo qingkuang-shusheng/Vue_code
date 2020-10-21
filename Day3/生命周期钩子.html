@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<!--<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>-->
+<script src="../vue.min.js"></script>
+<div id="app">
+    <span id="sp"> {{ number }}</span>
+    <h3 @click="change" id="ss">{{ number }}</h3>
+</div>
+
+<script>
+    new Vue({
+            el: "#app",
+            data: {
+                number: 50,
+            },
+            methods:{
+                change(){
+                    this.number--;
+                }
+            },
+            beforeCreate: function (){
+                console.log("beforeCreate: " + this.number);
+            },
+            created: function () {
+                console.log("create: " + this.number)
+            },
+            beforeMount(){
+                console.log("beforeMount:"+document.getElementById('sp').innerText)
+            },
+            mounted(){
+                console.log("beforeMount:"+document.getElementById('sp').innerText)
+            },
+            beforeUpdate(){
+                console.log("updated: " + this.number)
+                console.log("updated: " + document.getElementById("sp").innerText)
+            },
+            updated(){
+                console.log("updated: " + this.number)
+                console.log("updated: " + document.getElementById("sp").innerText)
+            },
+            beforeDestroy() {
+                console.log(1111)
+            },
+            destroy(){
+                console.log(2222)
+            }
+        }
+    )
+</script>
+</body>
+</html>

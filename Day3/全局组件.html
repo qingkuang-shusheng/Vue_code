@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <com></com>
+    <com></com>
+    <com></com>
+</div>
+
+<script>
+
+    let com = {
+        template:`
+            <div>这是我第一个组件</div>
+        `,
+    }
+
+    Vue.component("com",com)
+
+    new Vue({
+            el: "#app",
+            data: {
+                msg: "",
+            }
+        }
+    )
+</script>
+</body>
+</html>

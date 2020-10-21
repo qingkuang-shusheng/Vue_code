@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            color:red;
+        }
+        .green{
+            color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <com pwd="123" cs="red" user="tom"></com>
+    <com pwd="456" cs="green" user="marry"></com>
+</div>
+
+<script>
+    let com = {
+        template:
+            `<div>
+<div v-bind:class="cs">这还是我的组件</div>
+</div>
+        `,
+        props:["cs","user","pwd"],
+        created(){
+            console.log(this.user)
+            console.log(this.pwd)
+        }
+    }
+
+    new Vue({
+            el: "#app",
+            data: {
+                msg: "",
+            },
+            components:{
+                "com":com,
+            },
+        }
+    )
+</script>
+</body>
+</html>

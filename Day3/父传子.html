@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+    <input type="text" v-model="username">
+    <br>
+    父组件的值:{{username}}
+    <br>
+
+    <app v-bind:deliver="username"></app>
+
+</div>
+
+<script>
+    let app = {
+        template:`
+        <div>这是子组件传递的数据:{{ deliver }}
+        </div>
+        `,
+        props:['deliver']
+    }
+
+
+    new Vue({
+            el: "#app",
+            data: {
+                username: "",
+            },
+            components:{
+                app:app,
+            }
+        }
+    )
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../vue.js"></script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .aa{
+            border: 3px red solid;
+        }
+    </style>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+
+<div id="app">
+<!--    <img class="aa" src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3737872274,2960670006&fm=26&gp=0.jpg"-->
+<!--         title="可爱的二哈">-->
+    <img v-bind:class="{ aa:showCss  }" v-bind:src="src" :title="title">
+    <hr>
+    <input type="button" value="切换图片" @click="changImg">
+    <input type="button" value="改变图片样式" @click="addCss">
+</div>
+
+<script>
+    new Vue({
+            el: "#app",
+            data: {
+                title:"可爱的二哈",
+                showCss: false,
+                src: "https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1858396689,1632252428&fm=26&gp=0.jpg",
+            },
+            methods:{
+                addCss(){
+                    this.showCss = !this.showCss;
+                },
+                changImg(){
+                    this.src = "https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3737872274,2960670006&fm=26&gp=0.jpg"
+                },
+            }
+        }
+    )
+</script>
+</body>
+</html>

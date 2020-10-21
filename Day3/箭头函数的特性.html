@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<div id="app">
+
+</div>
+
+<script>
+
+    let user = {
+        username : '小白',
+        app(){
+            console.log(this.username)
+        }
+    }
+    user.app()
+
+    let student = {
+        username: "小兰",
+        app(){
+            setTimeout(function (){
+                console.log(this.username)
+            })
+        }
+    }
+    student.app()
+
+    let emp = {
+        username: "小路",
+        app(){
+            setTimeout(()=> console.log(this.username)
+            )
+        }
+    }
+    emp.app()
+
+    new Vue({
+            el: "#app",
+            data: {
+                msg: "",
+            }
+        }
+    )
+</script>
+</body>
+</html>

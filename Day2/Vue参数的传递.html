@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+<div id="app">
+    年龄: {{ age }}
+    <hr>
+    <input type="button" @click="add('小黑',50,event)" value="点我加">
+    <input type="button" @click="dec()" value="点我减">
+
+</div>
+
+<script>
+    new Vue({
+            el: "#app",
+            data: {
+                age : 18 ,
+            },
+            methods: {
+                add(name,num,event){
+                    this.age = num;
+                    // alert(name);
+                    console.log(event);
+                },
+                dec(){
+                    this.age --;
+                    console.log(event);
+                },
+            }
+        }
+    )
+</script>
+</body>
+</html>
