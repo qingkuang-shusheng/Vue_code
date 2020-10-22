@@ -9,6 +9,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 <div id="app">
+    <span @click="f">zezeze</span>
     <first></first>
 </div>
 
@@ -27,7 +28,7 @@
         },
         methods:{
             change(){
-                alert();
+                alert(12121);
             }
         }
     }
@@ -37,7 +38,11 @@
     new Vue({
             el: "#app",
             data: {},
-
+            methods: {
+              f(){
+                  alert(1111)
+              }
+            },
         }
     )
 </script>

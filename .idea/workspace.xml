@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f99ab8ef-1290-4bb5-93f6-96db5f83b3e0" name="Default Changelist" comment="" />
+    <list default="true" id="f99ab8ef-1290-4bb5-93f6-96db5f83b3e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vue_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vue_project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day3/组件中的data.html" beforeDir="false" afterPath="$PROJECT_DIR$/Day3/组件中的data.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,7 +27,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Day2" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1j7mvqSEkbT418fRNb26AXKOfBv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,11 +48,14 @@
       <recent name="G:\WebStorm\vue_project\Day2" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.组件中的data.html">
-    <configuration name="Vue参数的传递.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8135/vue_project/Day2/Vue参数的传递.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.js跳转传参.html">
+    <configuration name="路由的应用.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:13617/vue_project/Day4/路由的应用.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="局部组件.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue_project/Day3/局部组件.html" useBuiltInWebServerPort="true">
+    <configuration name="路由的参数传递.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:13617/vue_project/Day4/路由的参数传递.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="动态路由传参.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:13617/vue_project/Day4/动态路由传参.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="父传子.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue_project/Day3/父传子.html" useBuiltInWebServerPort="true">
@@ -68,19 +64,19 @@
     <configuration name="子传父.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue_project/Day3/子传父.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="组件中的data.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue_project/Day3/组件中的data.html" useBuiltInWebServerPort="true">
+    <configuration name="组件中的data.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:13617/vue_project/Day3/组件中的data.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="props属性.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/vue_project/Day3/props属性.html" useBuiltInWebServerPort="true">
+    <configuration name="js跳转传参.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:13617/vue_project/Day4/js跳转传参.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.js跳转传参.html" />
+        <item itemvalue="JavaScript Debug.动态路由传参.html" />
+        <item itemvalue="JavaScript Debug.路由的参数传递.html" />
+        <item itemvalue="JavaScript Debug.路由的应用.html" />
         <item itemvalue="JavaScript Debug.组件中的data.html" />
-        <item itemvalue="JavaScript Debug.子传父.html" />
-        <item itemvalue="JavaScript Debug.父传子.html" />
-        <item itemvalue="JavaScript Debug.props属性.html" />
-        <item itemvalue="JavaScript Debug.局部组件.html" />
       </list>
     </recent_temporary>
   </component>
@@ -95,7 +91,8 @@
       <workItem from="1603163748892" duration="5638000" />
       <workItem from="1603173753848" duration="12436000" />
       <workItem from="1603188866016" duration="11618000" />
-      <workItem from="1603241439500" duration="20785000" />
+      <workItem from="1603241439500" duration="21382000" />
+      <workItem from="1603327619544" duration="15455000" />
     </task>
     <servers />
   </component>
@@ -105,6 +102,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:G:/WebStorm/vue_project/Day3" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -112,6 +134,15 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="WindowStateProjectService">
     <state x="251" y="82" key="SettingsEditor" timestamp="1603279284595">
